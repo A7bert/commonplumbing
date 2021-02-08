@@ -1,10 +1,20 @@
 {
   "polyfillFiles": [
+<<<<<<< HEAD
     "static/chunks/polyfills-144e5fa6fafab6397d9c.js"
+=======
+    "static/chunks/polyfills.js"
   ],
-  "devFiles": [],
-  "ampDevFiles": [],
+  "devFiles": [
+    "static/chunks/react-refresh.js"
+  ],
+  "ampDevFiles": [
+    "static/chunks/webpack.js",
+    "static/chunks/amp.js"
+>>>>>>> 904cb94... inital commit
+  ],
   "lowPriorityFiles": [
+<<<<<<< HEAD
     "static/hFkvI31X4bYwA_xr72xJl/_buildManifest.js",
     "static/hFkvI31X4bYwA_xr72xJl/_ssgManifest.js"
   ],
@@ -44,6 +54,26 @@
       "static/chunks/framework.abffcf18e526b7c0dbcd.js",
       "static/chunks/cae37e2450877f722c9124aa944e33402a8f9539.3aeeff9e2d6ee12afaea.js",
       "static/chunks/pages/contact-7877b5d22e2508491729.js"
+=======
+    "static/development/_buildManifest.js",
+    "static/development/_ssgManifest.js"
+  ],
+  "pages": {
+    "/": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/index.js"
+    ],
+    "/_app": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/_app.js"
+    ],
+    "/_error": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/_error.js"
+>>>>>>> 904cb94... inital commit
     ]
   },
   "ampFirstPages": []
