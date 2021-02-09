@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
   "name": "common-plumbing",
-=======
-  "name": "learn-starter",
->>>>>>> 904cb94... inital commit
   "version": "0.1.0",
   "private": true,
   "scripts": {
