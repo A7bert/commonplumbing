@@ -1,5 +1,5 @@
 {
-  "name": "learn-starter",
+  "name": "common-plumbing",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,6 +10,20 @@
   "dependencies": {
     "next": "^10.0.0",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
-  }
+    "react-dom": "17.0.1",
+    "styled-components": "^5.2.1"
+  },
+  "description": "common plumbing",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/A7bert/common-plumbing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/A7bert/common-plumbing/issues"
+  },
+  "homepage": "https://github.com/A7bert/common-plumbing#readme"
 }
