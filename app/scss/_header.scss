@@ -1,0 +1,42 @@
+.header {
+  
+  .topbar {
+    padding: 12px 24px;
+    color: $white;
+    line-height: 16px;
+    background-color: $lightGrey;
+
+    svg {
+      width: 16px;
+      vertical-align: bottom;
+      margin-right: 6px;
+    }
+
+    a {
+      color: $white;
+      text-decoration: none;
+    }
+  }
+
+  nav {
+    padding: 24px;
+  }
+
+  &-logo {
+
+  }
+
+  &-menu { // mobile menu
+
+    > span {
+      display: block;
+      width: 26px;
+      height: 4px;
+      background-color: $lightBlue;
+
+      &:not(:last-child) {
+        margin-bottom: 3px;
+      }
+    }
+  }
+}
