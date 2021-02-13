@@ -1,4 +1,38 @@
 .header {
+  position: relative;
+  z-index: 1;
+
+  // hamburger open styles
+  &.open {
+
+    .overlay {
+      
+    }
+
+    .header-toggle {
+      > span:first-child {
+        transform: rotate(45deg);
+      }
+  
+      > span:nth-child(2) {
+        opacity: 0;
+      }
+  
+      > span:last-child {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  .overlay {
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: linear-gradient($lightBlue, transparent);
+  }
   
   .topbar {
     padding: 12px 24px;
@@ -10,6 +44,7 @@
       width: 16px;
       vertical-align: bottom;
       margin-right: 6px;
+      color: $white;
     }
 
     a {
@@ -19,23 +54,91 @@
   }
 
   nav {
-    padding: 24px;
+    width: 100%;
+    position: fixed;
+    background-color: $white;
+    top: 0;
+    left: 0;
+    padding: 1.15rem 1.5rem;
+
+    @include breakpoint-down(medium) {
+      padding: 0.875rem;
+    }
   }
 
   &-logo {
 
   }
 
-  &-menu { // mobile menu
+  &-toggle { // Mobile Menu Toggle
 
     > span {
       display: block;
       width: 26px;
       height: 4px;
       background-color: $lightBlue;
+      transition: all 300ms ease-in-out;
+      transform-origin: 3px 2px;
 
       &:not(:last-child) {
         margin-bottom: 3px;
+      }
+    }
+  }
+
+  &-menu { // mobile open menu
+    position: fixed;
+    width: calc(100% - 3rem);
+    left: 50%;
+    transform: translateX(-50%);
+    background: $white;
+    margin-top: 1.5rem;
+    padding: 1.625rem;
+    border-radius: 5px;
+
+    a {
+      display: block;
+      padding: 0.625rem;
+      color: $darkGrey;
+      text-align: center;
+    }
+  }
+
+  &-links {
+
+    a {
+      font-weight: 500;
+      color: $lightGrey;
+      transition: color 200ms ease-in-out;
+      position: relative;
+
+      &.button {
+        color: $white;
+      }
+
+      &:not(:last-child){
+        margin-right: 32px;
+      }
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 5px;
+        left: 0;
+        right: 0;
+        bottom: -31px;
+        background: linear-gradient(to right, $limeGreen, $brightCyan);
+        opacity: 0;
+        transition: opacity 300ms ease-in-out;
+      }
+
+      &:hover {
+        color: $darkGrey;
+
+        &::before {
+          opacity: 1;
+        }
       }
     }
   }
