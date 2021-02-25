@@ -210,6 +210,13 @@ button,
   }
 }
 
+.header-logo .logo-text {
+  position: relative;
+  top: -30px;
+  font-weight: 700;
+  color: #0d3192;
+}
+
 .header-toggle > span {
   display: block;
   width: 26px;
@@ -376,6 +383,7 @@ main .banner-text > span {
 
 main .banner-text > span.h1 {
   font-size: 1.5em;
+  font-weight: 600;
   line-height: 1.3;
   margin-bottom: .25em;
 }

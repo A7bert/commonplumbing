@@ -62,6 +62,13 @@
         max-height: 34px;
       }
     }
+
+    .logo-text {
+      position: relative;
+      top: -30px;
+      font-weight: 700;
+      color: #0d3192;
+    }
   }
 
   &-toggle { // Mobile Menu Toggle
