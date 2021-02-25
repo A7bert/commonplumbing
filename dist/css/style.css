@@ -37,6 +37,11 @@
           animation: fade-in 300ms ease-in-out forwards;
 }
 
+.slow-fade-in {
+  -webkit-animation: fade-in 500ms ease-in-out forwards;
+          animation: fade-in 500ms ease-in-out forwards;
+}
+
 @-webkit-keyframes fade-out {
   from {
     opacity: 1;
