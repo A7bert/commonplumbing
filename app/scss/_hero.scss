@@ -4,7 +4,7 @@
   .hero-image {
     position: relative;
     min-height: 27em;
-    background-image: url('/images/img1-1920x730.jpg');
+    background-image: url('/images/WechatIMG130.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -16,11 +16,15 @@
 
   .hero-text {
     position: absolute;
-    bottom: 0;
-    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    border-radius: 10px;
+    width: 80%;
     text-align: center;
     color: $white;
-    background-color: rgba($color: #90ee90, $alpha: 0.5);
+    background-color: rgba($color: #4f7fc2, $alpha: 0.7);
 
     h1 {
       font-size: 1.625em;

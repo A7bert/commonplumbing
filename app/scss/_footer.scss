@@ -1,3 +1,12 @@
 .footer {
-  display: flex;  
+  font-size: 0.875em;
+  padding: 1em 1.125em;
+
+  .footer-logo {
+    
+    img {
+      width: 46px;
+      height: 46px;
+    }
+  }
 }
