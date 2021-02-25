@@ -27,7 +27,7 @@ hamburger.addEventListener('click', function(){
   }  
 });
 
-const links = document.querySelectorAll(".menu-links a");
+const links = document.querySelectorAll(".menu-links a.anchor-link");
  
 for (const link of links) {
   link.addEventListener("click", clickHandler);

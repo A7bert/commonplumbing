@@ -170,27 +170,8 @@ button,
   left: 0;
   bottom: 0;
   right: 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#51bcc6), to(transparent));
-  background-image: linear-gradient(#51bcc6, transparent);
-}
-
-.header .topbar {
-  padding: 12px 24px;
-  color: white;
-  line-height: 16px;
-  background-color: #adadad;
-}
-
-.header .topbar svg {
-  width: 16px;
-  vertical-align: bottom;
-  margin-right: 6px;
-  color: white;
-}
-
-.header .topbar a {
-  color: white;
-  text-decoration: none;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0d3192), to(transparent));
+  background-image: linear-gradient(#0d3192, transparent);
 }
 
 .header nav {
@@ -205,6 +186,7 @@ button,
 
 @media (max-width: 63.9375em) {
   .header nav {
+    height: auto;
     padding: 0.875rem;
   }
 }
@@ -214,6 +196,13 @@ button,
   max-height: 84px;
   top: -4px;
   position: relative;
+}
+
+@media (max-width: 63.9375em) {
+  .header-logo img {
+    max-width: 34px;
+    max-height: 34px;
+  }
 }
 
 .header-toggle > span {
@@ -289,6 +278,10 @@ button,
   opacity: 1;
 }
 
+.header .call-button {
+  font-size: 16px;
+}
+
 .hero {
   position: relative;
 }
@@ -353,7 +346,13 @@ main .full-screen-section {
 main .container {
   max-width: 69.375rem;
   margin: 0 auto;
-  padding: 2em;
+  padding: 0.875em;
+}
+
+@media (min-width: 40em) {
+  main .container {
+    padding: 2em;
+  }
 }
 
 main .dark-bg {
@@ -424,6 +423,12 @@ main .service-item {
 .contact-email {
   color: white;
   text-decoration: underline;
+}
+
+@media (max-width: 63.9375em) {
+  .contact-email {
+    font-size: 18px;
+  }
 }
 
 .footer {

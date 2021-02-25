@@ -31,26 +31,7 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background-image: linear-gradient($lightBlue, transparent);
-  }
-  
-  .topbar {
-    padding: 12px 24px;
-    color: $white;
-    line-height: 16px;
-    background-color: $lightGrey;
-
-    svg {
-      width: 16px;
-      vertical-align: bottom;
-      margin-right: 6px;
-      color: $white;
-    }
-
-    a {
-      color: $white;
-      text-decoration: none;
-    }
+    background-image: linear-gradient(#0d3192, transparent);
   }
 
   nav {
@@ -63,6 +44,7 @@
     padding: 0 1.5rem;
 
     @include breakpoint-down(medium) {
+      height: auto;
       padding: 0.875rem;
     }
   }
@@ -74,6 +56,11 @@
       max-height: 84px;
       top: -4px;
       position: relative;
+
+      @include breakpoint-down(medium) {
+        max-width: 34px;
+        max-height: 34px;
+      }
     }
   }
 
@@ -148,5 +135,9 @@
         }
       }
     }
+  }
+
+  .call-button {
+    font-size: 16px;
   }
 }
