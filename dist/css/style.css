@@ -275,8 +275,8 @@ button,
   left: 0;
   right: 0;
   bottom: -31px;
-  background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
-  background: linear-gradient(to right, #31d35c, #2bb7da);
+  background: -webkit-gradient(linear, left top, right top, from(#d91310), to(#0d3192));
+  background: linear-gradient(to right, #d91310, #0d3192);
   opacity: 0;
   -webkit-transition: opacity 300ms ease-in-out;
   transition: opacity 300ms ease-in-out;
@@ -397,6 +397,13 @@ main .banner-text > span.colored-text {
 main .banner-text > span.dark-text {
   font-size: 1.875em;
   color: #464646;
+}
+
+main #about {
+  background-image: url("../../images/plumbing-vector.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 90% auto;
 }
 
 main #services {
