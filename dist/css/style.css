@@ -399,13 +399,6 @@ main .banner-text > span.dark-text {
   color: #464646;
 }
 
-main #about {
-  background-image: url("../../images/plumbing-vector.png");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: 90% auto;
-}
-
 main #services {
   background-color: #eee;
 }
