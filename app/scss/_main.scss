@@ -22,7 +22,7 @@ main {
   }
 
   .banner-text {
-    text-align: center;
+    text-align: left;
 
     > span {
       display: block;
@@ -47,12 +47,13 @@ main {
     }
   }
 
-  // #about {
-  //   background-image: url("../../images/plumbing-vector.png");
-  //   background-repeat: no-repeat;
-  //   background-position: left center;
-  //   background-size: 90% auto;
-  // }
+  #about {
+
+    img {
+      max-width: 376px;
+      float: right;
+    }
+  }
 
   #services {
     background-color: #eee;

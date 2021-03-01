@@ -374,7 +374,7 @@ main .dark-bg {
 }
 
 main .banner-text {
-  text-align: center;
+  text-align: left;
 }
 
 main .banner-text > span {
@@ -397,6 +397,11 @@ main .banner-text > span.colored-text {
 main .banner-text > span.dark-text {
   font-size: 1.875em;
   color: #464646;
+}
+
+main #about img {
+  max-width: 376px;
+  float: right;
 }
 
 main #services {
