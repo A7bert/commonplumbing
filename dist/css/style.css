@@ -298,19 +298,22 @@ button,
   position: relative;
 }
 
-.hero .hero-image {
-  position: relative;
-  min-height: 27em;
-  background-image: url("/images/WechatIMG130.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-
 @media (max-width: 39.9375em) {
   .hero .hero-image {
     min-height: 18em;
   }
+}
+
+.hero .hero-image-1 {
+  background-image: url("/images/WechatIMG130.jpg");
+}
+
+.hero .hero-image-2 {
+  background-image: url("/images/WechatIMG275.jpg");
+}
+
+.hero .hero-image-3 {
+  background-image: url("/images/WechatIMG274.jpg");
 }
 
 .hero .hero-text {
@@ -345,6 +348,15 @@ button,
   .hero .hero-text h2 {
     font-size: 1em;
   }
+}
+
+.swiper-slide {
+  position: absolute;
+  min-height: 27em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  z-index: -1;
 }
 
 main {
