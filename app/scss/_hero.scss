@@ -2,15 +2,21 @@
   position: relative;
 
   .hero-image {
-    position: relative;
-    min-height: 27em;
-    background-image: url('/images/WechatIMG130.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
 
     @include breakpoint-down(small) {
       min-height: 18em;
+    }
+
+    &-1 {
+      background-image: url('/images/WechatIMG130.jpg');
+    }
+
+    &-2 {
+      background-image: url('/images/WechatIMG275.jpg');
+    }
+
+    &-3 {
+      background-image: url('/images/WechatIMG274.jpg');
     }
   }
 
@@ -47,4 +53,13 @@
       }
     }
   }
+}
+
+.swiper-slide {
+  position: absolute;
+  min-height: 27em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  z-index: -1;
 }
